@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ansh Bajaj | ECE @ NIT Goa · AI for VLSI</title>
+  <meta name="description" content="Ansh Bajaj — final-year B.Tech ECE student at NIT Goa, exchange student at IIT Madras (DSAI), researching agentic AI for gate sizing in VLSI design flows." />
+  <meta property="og:title" content="Ansh Bajaj — AI for VLSI" />
+  <meta property="og:description" content="ECE @ NIT Goa · Exchange Student @ IIT Madras (DSAI) · Research in AI for VLSI, digital design and embedded systems." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/profile.jpg" />
+
+  <!-- Favicon uses the profile photo once assets/profile.jpg is added -->
+  <link rel="icon" href="assets/profile.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a href="#top" class="nav__brand">Ansh Bajaj</a>
+
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="nav-menu" class="nav__menu" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="Ansh_bajaj.pdf" class="btn btn--small btn--outline" download>Résumé</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <svg class="hero__circuit" aria-hidden="true" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+        <g fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M0 120 H180 L220 160 H420 L460 120 H800" />
+          <path d="M0 300 H120 L160 260 H360 L400 300 H560 L600 340 H800" />
+          <path d="M0 480 H240 L280 440 H500 L540 480 H800" />
+          <path d="M300 0 V80 L340 120 V220" />
+          <path d="M620 600 V420 L580 380 V300" />
+          <path d="M120 600 V520 L160 480" />
+        </g>
+        <g fill="currentColor">
+          <circle cx="220" cy="160" r="4" /><circle cx="460" cy="120" r="4" />
+          <circle cx="160" cy="260" r="4" /><circle cx="600" cy="340" r="4" />
+          <circle cx="280" cy="440" r="4" /><circle cx="540" cy="480" r="4" />
+          <circle cx="340" cy="220" r="4" /><circle cx="580" cy="300" r="4" />
+        </g>
+      </svg>
+
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="mono-label">// hello, I'm</p>
+          <h1>Ansh Bajaj</h1>
+          <p class="hero__tagline">
+            ECE @ NIT Goa <span class="dot">·</span> Exchange Student @ IIT Madras (DSAI) <span class="dot">·</span> AI for VLSI
+          </p>
+          <p class="hero__lead">
+            I build at the intersection of hardware and intelligence: from transistor-level layouts and RTL
+            to data-driven optimization of VLSI design flows.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="Ansh_bajaj.pdf" class="btn btn--outline" download>Download Résumé</a>
+          </div>
+
+          <div class="socials">
+            <a href="https://github.com/anshwppr" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.6.2 2.8.1 3.2.8.8 1.3 1.9 1.3 3.1 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"/></svg>
+            </a>
+            <!-- TODO: replace with full LinkedIn profile URL -->
+            <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2ZM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2Zm1.8 13.1H3.6V9h3.5v11.5ZM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0Z"/></svg>
+            </a>
+            <a href="mailto:anshbajaj77@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm10 8.6L3 6.8V18h18V6.8l-9 5.8ZM3.6 6l8.4 5.4L20.4 6H3.6Z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Profile photo: save it as assets/profile.jpg. Until then a placeholder is shown. -->
+        <div class="avatar">
+          <svg class="avatar__placeholder" viewBox="0 0 100 100" aria-hidden="true">
+            <circle cx="50" cy="38" r="18" />
+            <path d="M14 92c4-20 18-30 36-30s32 10 36 30Z" />
+          </svg>
+          <img src="assets/profile.jpg" alt="Ansh Bajaj" onerror="this.remove()" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section">
+      <div class="container">
+        <p class="mono-label">// about</p>
+        <h2>About Me</h2>
+        <div class="about reveal">
+          <p>
+            I am a final-year Electronics and Communication Engineering student at <strong>NIT Goa</strong>, currently
+            spending my final year at <strong>IIT Madras</strong> in the Department of Data Science and Artificial
+            Intelligence (DSAI) through a student exchange program under an MoU between NIT Goa and IIT Madras.
+          </p>
+          <p>
+            At IIT Madras, I work in the <strong>SIMHA Lab</strong> and <strong>RISE Lab</strong>, continuing the AI4VLSI
+            research I began during my internship. My current research explores whether an agentic AI framework can be
+            developed or used for gate sizing in RTL-based VLSI design flows.
+          </p>
+          <p>
+            Alongside research, I am taking courses aligned with my interests: CAD for VLSI (focused on Physical
+            Design), along with electives in Machine Learning and Security Testing.
+          </p>
+        </div>
+
+        <ul class="stats reveal">
+          <li><span class="stats__value">8.83</span><span class="stats__label">CGPA at NIT Goa</span></li>
+          <li><span class="stats__value">~20%</span><span class="stats__label">PPA improvement on ISPD-2012</span></li>
+          <li><span class="stats__value">IIT Madras</span><span class="stats__label">Final-year exchange, DSAI</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ RESEARCH ============ -->
+    <section id="research" class="section section--alt">
+      <div class="container">
+        <p class="mono-label">// research</p>
+        <h2>Current Focus</h2>
+        <div class="grid grid--2">
+          <article class="card reveal">
+            <h3>Agentic AI for Gate Sizing</h3>
+            <p class="card__meta">SIMHA Lab &amp; RISE Lab · IIT Madras</p>
+            <p>
+              Investigating whether an agentic AI framework can be developed or used to perform gate sizing in
+              RTL-based VLSI design flows, building on my earlier work with Lagrangian Relaxation and data-driven
+              optimization for power, performance and area (PPA).
+            </p>
+            <ul class="tags">
+              <li>AI4VLSI</li><li>Agentic AI</li><li>Gate Sizing</li><li>EDA</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <h3>Current Coursework</h3>
+            <p class="card__meta">IIT Madras · 2026–27</p>
+            <ul class="list">
+              <li><strong>CAD for VLSI</strong>: primarily Physical Design</li>
+              <li><strong>Machine Learning</strong>: elective</li>
+              <li><strong>Security Testing</strong>: elective</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PUBLICATIONS ============ -->
+    <section id="publications" class="section">
+      <div class="container">
+        <p class="mono-label">// publications</p>
+        <h2>Publications</h2>
+        <article class="card pub reveal">
+          <div class="pub__head">
+            <!-- TODO: add paper details (title) -->
+            <h3>Paper title coming soon</h3>
+            <span class="badge">Submitted</span>
+          </div>
+          <!-- TODO: add paper details (authors) -->
+          <p class="card__meta">Submitted to NCI Forge</p>
+          <!-- TODO: add paper details (description / abstract) -->
+          <p class="muted">Details about this paper will be added soon.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="section section--alt">
+      <div class="container">
+        <p class="mono-label">// experience</p>
+        <h2>Experience</h2>
+
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <div class="card">
+              <div class="row">
+                <h3>Indian Institute of Technology Madras</h3>
+                <span class="date">05/2026 – 07/2026</span>
+              </div>
+              <div class="row row--sub">
+                <span>Research Intern, Department of Data Science and Artificial Intelligence</span>
+                <span>Chennai, India</span>
+              </div>
+              <ul class="list">
+                <li>Developed a discrete-cell <strong>gate-sizing optimization for VLSI circuits</strong>, targeting improved PPA.</li>
+                <li>Formulated gate sizing as a data-driven optimization problem using circuit-level features and design constraints, and evaluated candidate solutions using <em>Synopsys PrimeTime</em> and <em>OpenROAD</em>.</li>
+                <li>Implemented <em>Lagrangian Relaxation</em> in Python and automated data generation, model training, circuit evaluation and result-analysis workflows.</li>
+                <li>Achieved <strong>~20% improvement</strong> in delay, power or area on <em>ISPD-2012 benchmarks</em>, and documented the methodology and findings under the supervision of <em>Dr. Patanjali SLPSK</em>.</li>
+              </ul>
+              <ul class="tags">
+                <li>Python</li><li>PrimeTime</li><li>OpenROAD</li><li>Optimization</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline__item reveal">
+            <div class="card">
+              <div class="row">
+                <h3>Emertxe</h3>
+                <span class="date">Jan 2025 – Mar 2025</span>
+              </div>
+              <div class="row row--sub">
+                <span>Embedded Systems Intern</span>
+                <span>Remote</span>
+              </div>
+              <ul class="list">
+                <li>Built a washing-machine controller in C++ using a finite-state-machine architecture for wash, rinse and spin cycles.</li>
+                <li>Applied object-oriented and modular design principles to implement reusable motor, sensor, timer and controller modules.</li>
+              </ul>
+              <ul class="tags">
+                <li>C++</li><li>FSM</li><li>Embedded</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline__item reveal">
+            <div class="card">
+              <div class="row">
+                <h3>Teachnook, Cognizance IIT Roorkee</h3>
+                <span class="date">Jun 2024 – Jul 2024</span>
+              </div>
+              <div class="row row--sub">
+                <span>Drone Technology Trainee</span>
+                <span>Remote</span>
+              </div>
+              <ul class="list">
+                <li>Programmed a code-controlled drone in C/C++ and implemented basic light control, stabilization and position-hold operations.</li>
+                <li>Studied drone architecture, embedded control flow, and interactions among sensors, actuators and flight-control components.</li>
+              </ul>
+              <ul class="tags">
+                <li>C/C++</li><li>Drones</li><li>Control</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section">
+      <div class="container">
+        <p class="mono-label">// projects</p>
+        <h2>Projects</h2>
+
+        <div class="grid grid--3">
+          <article class="card project reveal">
+            <span class="date">03/2026 – 04/2026</span>
+            <h3>8-Bit Arithmetic Logic Unit</h3>
+            <p>
+              Designed an 8-bit ALU from scratch in Cadence Virtuoso, supporting addition, subtraction, multiplication,
+              inverter, AND, OR and XOR. Took it from transistor-level schematics to the final layout, verified with transient
+              simulations, and passed DRC and LVS.
+            </p>
+            <ul class="tags">
+              <li>Cadence Virtuoso</li><li>CMOS 180 nm</li><li>Layout</li><li>DRC/LVS</li>
+            </ul>
+          </article>
+
+          <article class="card project reveal">
+            <span class="date">Sep 2025 – Nov 2025</span>
+            <h3>ESP32 Smart Energy Meter</h3>
+            <p>
+              IoT energy meter using ADC-based voltage and current sampling to compute RMS values, power, energy
+              and power factor in real time, with a Wi-Fi dashboard for remote monitoring, overload detection and calibration.
+            </p>
+            <ul class="tags">
+              <li>ESP32</li><li>C/C++</li><li>IoT</li><li>Wi-Fi</li>
+            </ul>
+          </article>
+
+          <article class="card project reveal">
+            <span class="date">2025</span>
+            <h3>Smart Water-Level Controller</h3>
+            <p>
+              ESP32-based closed-loop water-level controller with ultrasonic sensing and a Python-backed web interface,
+              using setpoint-based automatic regulation for domestic and small-scale industrial use.
+            </p>
+            <ul class="tags">
+              <li>ESP32</li><li>Python</li><li>IoT</li><li>Ultrasonic</li>
+            </ul>
+          </article>
+
+          <article class="card project reveal">
+            <span class="date">08/2025 – 11/2025</span>
+            <h3>Digital Arithmetic Web App</h3>
+            <p>
+              Interactive webpage for binary, octal, decimal and hexadecimal arithmetic: addition, subtraction,
+              multiplication, division and number-system conversion implemented in JavaScript.
+            </p>
+            <ul class="tags">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+          </article>
+
+          <article class="card project reveal">
+            <span class="date">08/2025 – 11/2025</span>
+            <h3>Voice- &amp; Bluetooth-Controlled Car</h3>
+            <p>
+              Arduino Uno robotic car operated by voice commands and joystick controls over a Bluetooth module, with
+              motor-control and command-processing logic written in C/C++.
+            </p>
+            <ul class="tags">
+              <li>Arduino Uno</li><li>C/C++</li><li>Bluetooth</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section section--alt">
+      <div class="container">
+        <p class="mono-label">// skills</p>
+        <h2>Skills</h2>
+
+        <div class="skills">
+          <div class="skills__group reveal">
+            <h3>Programming Languages</h3>
+            <ul class="tags"><li>Python</li><li>C</li><li>C++</li><li>SQL</li><li>Assembly</li></ul>
+          </div>
+          <div class="skills__group reveal">
+            <h3>Hardware &amp; VLSI</h3>
+            <ul class="tags"><li>Verilog</li><li>SystemVerilog</li><li>VHDL</li><li>RTL Design</li><li>DRC &amp; LVS</li><li>TCL</li></ul>
+          </div>
+          <div class="skills__group reveal">
+            <h3>Developer Tools</h3>
+            <ul class="tags"><li>Cadence Virtuoso</li><li>Vivado</li><li>Synopsys PrimeTime</li><li>OpenROAD</li><li>MATLAB</li><li>MPLAB</li><li>Arduino IDE</li><li>Jupyter</li><li>VS Code</li><li>Git &amp; GitHub</li><li>Docker</li></ul>
+          </div>
+          <div class="skills__group reveal">
+            <h3>Web Technologies</h3>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          </div>
+          <div class="skills__group reveal">
+            <h3>Databases &amp; Analytics</h3>
+            <ul class="tags"><li>MySQL</li><li>Tableau</li></ul>
+          </div>
+          <div class="skills__group reveal">
+            <h3>Areas of Interest</h3>
+            <ul class="tags"><li>VLSI</li><li>Digital Design</li><li>Hardware Modelling</li><li>FPGA</li><li>Generative AI</li><li>Data Analytics</li><li>Cyber Security</li><li>IoT</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section id="education" class="section">
+      <div class="container">
+        <p class="mono-label">// education</p>
+        <h2>Education &amp; Certifications</h2>
+
+        <div class="grid grid--2">
+          <div class="stack">
+            <article class="card reveal">
+              <div class="row"><h3>B.Tech. in Electronics and Communication Engineering</h3><span class="date">2023 – 2027</span></div>
+              <div class="row row--sub"><span>National Institute of Technology Goa</span><span>CGPA: 8.83</span></div>
+              <p class="muted small">Final year at IIT Madras (DSAI) via student exchange.</p>
+            </article>
+            <article class="card reveal">
+              <div class="row"><h3>Class XII (CBSE)</h3><span class="date">2020 – 2022</span></div>
+              <div class="row row--sub"><span>Kendriya Vidyalaya, Mandla</span><span>88.9%</span></div>
+            </article>
+            <article class="card reveal">
+              <div class="row"><h3>Class X (CBSE)</h3><span class="date">2018 – 2020</span></div>
+              <div class="row row--sub"><span>Maharishi Vidya Mandir, Mandla</span><span>83%</span></div>
+            </article>
+          </div>
+
+          <article class="card reveal">
+            <h3>Generative AI with LangChain and Hugging Face</h3>
+            <p class="card__meta">Udemy · KrishAI Technologies</p>
+            <ul class="list">
+              <li>Comprehensive training in Python, from fundamentals to advanced topics, along with Generative AI, LangChain, Hugging Face, NLP, RNNs and CNNs.</li>
+              <li>Hands-on experience building AI applications using large language models, transformer-based models and modern NLP frameworks.</li>
+            </ul>
+            <ul class="tags"><li>LangChain</li><li>Hugging Face</li><li>LLMs</li><li>NLP</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LEADERSHIP ============ -->
+    <section id="leadership" class="section section--alt">
+      <div class="container">
+        <p class="mono-label">// leadership</p>
+        <h2>Leadership &amp; Achievements</h2>
+
+        <div class="grid grid--3">
+          <article class="card reveal">
+            <span class="date">2026 – 27</span>
+            <h3>IIT Madras Exchange</h3>
+            <p>Selected as a B.Tech 4th-year exchange student in the Department of Data Science and AI at IIT Madras.</p>
+          </article>
+          <article class="card reveal">
+            <span class="date">Aug 2024 – Aug 2025</span>
+            <h3>Class Representative</h3>
+            <p class="card__meta">Dept. of ECE, NIT Goa</p>
+            <p>Liaison between faculty and students for academic schedules, assignments, examinations, labs and class coordination.</p>
+          </article>
+          <article class="card reveal">
+            <span class="date">Oct 2024</span>
+            <h3>Coordinator, Hindi Pakhwada</h3>
+            <p class="card__meta">NIT Goa</p>
+            <p>Coordinated competitions, cultural activities, participant communication and event logistics with faculty.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <p class="mono-label">// contact</p>
+        <h2>Get in Touch</h2>
+        <p class="contact__lead">
+          I'm open to research collaborations, internships and conversations about VLSI, EDA and AI.
+        </p>
+        <a href="mailto:anshbajaj77@gmail.com" class="btn">anshbajaj77@gmail.com</a>
+        <div class="contact__links">
+          <a href="https://github.com/anshwppr" target="_blank" rel="noopener">GitHub</a>
+          <!-- TODO: replace with full LinkedIn profile URL -->
+          <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="Ansh_bajaj.pdf" download>Résumé (PDF)</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Ansh Bajaj</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
